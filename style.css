@@ -1,0 +1,85 @@
+img {
+    display: block;
+    margin: auto;
+}
+textarea {
+    display: block;
+    margin: auto;
+    width: 1580px;
+    text-align: center;
+    font-size: 30px;
+    resize: none;
+}
+
+body {
+    background-color: black;
+}
+
+.rectangle {
+    background-color: yellow;
+    height: 600px;
+    margin: auto;
+    width: 50%;
+    padding: 5%;
+    font-family: "Apple Chancery", cursive;
+    position: relative;
+  }
+
+.rectangleMiroir {
+    background-color: grey;
+    height: 600px;
+    margin: auto;
+    width: 50%;
+    padding: 5%;
+    font-family: "Apple Chancery", cursive;
+    position: relative;
+}
+
+p {
+    font-size: 20px;
+}
+
+.left,
+.right {
+    width: 40px;
+    height: 40px;
+    transition: .5s;
+    float: left;
+    box-shadow: -5px -5px 0 rgba(0, 0, 0, 1);
+    cursor: pointer;
+    
+    
+}
+
+.left {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 15px;
+    
+}
+
+.right {
+    transform: rotate(-225deg);
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px;
+}
+
+.left:hover,
+.right:hover {
+    box-shadow: -2px -2px 0 rgba(255,255,255,1);
+}
+
+div img {
+    width: 30%;
+}
+
+div div {
+    background-color:blanchedalmond;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

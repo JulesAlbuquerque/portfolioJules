@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Porfolio</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+</html>
+<body>
+    <img src="./img/chambre.gif" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="" alt="Des notes, on dirait qu'il comporte le résumé de nombreux projets." title="" href="note.html" coords="386,240,471,328">
+        <area target="" alt="Un pc, il ne semble pas encore à jour... *ajout de cette fonctionnalité prévue*" title="" href="" coords="499,365,581,423" shape="rect">
+        <area target="" alt="Un miroir, on dirait qu'on peut voir quelque chose dedans ?" title="" href="miroir.html" coords="1390,211,1480,511" shape="rect">
+    </map>
+
+    <textarea rows="4" cols="50"></textarea>
+
+    <script>
+    document.querySelectorAll('area').forEach(area => {
+	  area.addEventListener('mouseover', () => {
+	    document.querySelector('textarea').value = area.alt;
+	  });
+	  area.addEventListener('mouseout', () => {
+	    document.querySelector('textarea').value = '';
+	  });
+    });
+	</script>
+</body>
+<footer>
+
+</footer>
